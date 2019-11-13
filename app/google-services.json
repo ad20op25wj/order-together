@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "836689065240",
+    "firebase_url": "https://order-together-ac372.firebaseio.com",
+    "project_id": "order-together-ac372",
+    "storage_bucket": "order-together-ac372.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836689065240:android:4194041711f3fb2a9eda6d",
+        "android_client_info": {
+          "package_name": "com.example.ordertogether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836689065240-l9dsdg7cus4ngik03rg5vaq9s23ep7b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsvdbzn_9YDe6rEdgZ3wOheBNMzfsA59Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836689065240-l9dsdg7cus4ngik03rg5vaq9s23ep7b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

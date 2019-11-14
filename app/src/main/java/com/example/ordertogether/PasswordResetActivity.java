@@ -1,21 +1,16 @@
 package com.example.ordertogether;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class PasswordResetActivity extends AppCompatActivity {
-    private FirebaseAuth mAuth;
+public class PasswordResetActivity extends AccountActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +27,14 @@ public class PasswordResetActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch(v.getId()) {
                 case R.id.sendButton:
-                    send();
+                    logic();
                     break;
             }
         }
     };
 
-    private void send() {
+    @Override
+    protected void logic() {
         String email = ((EditText)findViewById(R.id.emailEditText)).getText().toString();
 
         if(email.length() > 0) {
@@ -55,15 +51,5 @@ public class PasswordResetActivity extends AppCompatActivity {
         } else {
             startToast("이메일을 입력해주세요.");
         }
-    }
-
-    private void startToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
-    }
-
-    private void myStartActivity(Class c) {
-        Intent intent = new Intent(this, c);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
     }
 }

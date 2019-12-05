@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+    <ListView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:background="#dddddd"
+        android:layout_weight="1"
+        android:id="@+id/chatMessageListView"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:background="@null"
+        android:layout_weight="1"
+        android:id="@+id/messageToSend"
+        android:maxLines="1"
+        android:hint="메세지를 입력해주세요."
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#44449f"
+        android:id="@+id/sendButton"
+        android:text="전송"/>
+
+    </LinearLayout>
+
+</LinearLayout>

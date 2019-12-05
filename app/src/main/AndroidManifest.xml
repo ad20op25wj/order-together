@@ -34,6 +34,14 @@
         </activity>
         <activity android:name=".SignUpActivity">
         </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".ChatAdapter">
+        </activity>
+        <activity android:name=".ChatMessageDTO">
+        </activity>
+        <activity android:name=".ChattingRoomManager">
+        </activity>
     </application>
 
 </manifest>

@@ -42,6 +42,30 @@
         </activity>
         <activity android:name=".ChattingRoomManager">
         </activity>
+        <activity android:name=".ChickenActivity">
+        </activity>
+        <activity android:name=".ChickenShare">
+        </activity>
+        <activity android:name=".ChineseActivity">
+        </activity>
+        <activity android:name=".ChineseShare">
+        </activity>
+        <activity android:name=".DosirakActivity">
+        </activity>
+        <activity android:name=".DosirakShare">
+        </activity>
+        <activity android:name=".GpsTracker">
+        </activity>
+        <activity android:name=".KoreanActivity">
+        </activity>
+        <activity android:name=".KoreanShare">
+        </activity>
+        <activity android:name=".PizzaActivity">
+        </activity>
+        <activity android:name=".PizzaShare">
+        </activity>
+        <activity android:name=".Share">
+        </activity>
     </application>
 
 </manifest>

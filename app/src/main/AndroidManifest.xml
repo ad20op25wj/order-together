@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".MainBoard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -65,6 +65,10 @@
         <activity android:name=".PizzaShare">
         </activity>
         <activity android:name=".Share">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".Board">
         </activity>
     </application>
 

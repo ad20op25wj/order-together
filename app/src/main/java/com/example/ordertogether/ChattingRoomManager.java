@@ -22,6 +22,8 @@ public class ChattingRoomManager {
     private static FirebaseDatabase database;
     private static DatabaseReference databaseReference;
 
+    private ChattingRoomManager(){};
+
     public static ChattingRoomManager getInstance(){
         if(chattingRoomManager == null)
         {

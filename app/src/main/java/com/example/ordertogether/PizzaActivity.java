@@ -21,8 +21,7 @@ public class PizzaActivity extends AppCompatActivity {
 
     public void btn_pizza1Clicked (View v){
         Toast.makeText(getApplicationContext(), "피자 배달 공유방을 찾습니다 ", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(PizzaActivity.this, MainBoard.class);
-        intent.putExtra("menu", "pizza");
+        Intent intent = new Intent(PizzaActivity.this, PizzaBoard.class);
         startActivity(intent);
     }
     public void btn_pizza2Clicked (View v){

@@ -5,16 +5,18 @@ public class Board {
     private String title;
     private String contents;
     private String name;
+    private String roomKey;
 
     public Board() {
 
     }
 
-    public Board(String id, String title, String contents, String name) {
+    public Board(String id, String title, String contents, String name, String roomKey) {
         this.id = id;
         this.title = title;
         this.contents = contents;
         this.name = name;
+        this.roomKey = roomKey;
     }
 
     public String getId() {
@@ -49,6 +51,14 @@ public class Board {
         this.name = name;
     }
 
+    public String getRoomKey() {
+        return roomKey;
+    }
+
+    public void setRoomKey(String roomKey) {
+        this.roomKey = roomKey;
+    }
+
     @Override
     public String toString() {
         return "Board{" +
@@ -56,6 +66,7 @@ public class Board {
                 ", title='" + title + '\'' +
                 ", contents='" + contents + '\'' +
                 ", name='" + name + '\'' +
+                ", roomKey='" + roomKey + '\'' +
                 '}';
     }
 }

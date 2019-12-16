@@ -21,8 +21,7 @@ public class KoreanActivity extends AppCompatActivity {
 
     public void btn_korean1Clicked (View v){
         Toast.makeText(getApplicationContext(), "한식 배달 공유방을 찾습니다 ", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(KoreanActivity.this, MainBoard.class);
-        intent.putExtra("menu", "korean");
+        Intent intent = new Intent(KoreanActivity.this, KoreanBoard.class);
         startActivity(intent);
     }
     public void btn_korean2Clicked (View v){

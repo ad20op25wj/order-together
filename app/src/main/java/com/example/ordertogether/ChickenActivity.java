@@ -21,7 +21,7 @@ public class ChickenActivity extends AppCompatActivity {
 
     public void btn_chicken1Clicked (View v){
         Toast.makeText(getApplicationContext(), "치킨 배달 공유방을 찾습니다 ", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(ChickenActivity.this, ChickenShare.class);
+        Intent intent = new Intent(ChickenActivity.this, ChickenBoard.class);
         startActivity(intent);
     }
     public void btn_chicken2Clicked (View v){

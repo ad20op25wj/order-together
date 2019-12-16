@@ -20,7 +20,8 @@ public class DosirakActivity extends AppCompatActivity {
 
     public void btn_dosirak1Clicked (View v){
         Toast.makeText(getApplicationContext(), "도시락 배달 공유방을 찾습니다 ", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(DosirakActivity.this,DosirakShare.class);
+        Intent intent = new Intent(DosirakActivity.this, MainBoard.class);
+        intent.putExtra("menu", "dosirak");
         startActivity(intent);
     }
     public void btn_dosirak2Clicked (View v){

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +29,12 @@ public class PizzaBoard extends AppCompatActivity implements View.OnClickListene
     private MainAdapter mAdapter;
     private List<Board> mBoardList;
 
+    public void btn_gpsClicked (View v){
+        Toast.makeText(getApplicationContext(), "위치를 찾습니다. ", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(PizzaBoard.this, PizzaShare.class);
+
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

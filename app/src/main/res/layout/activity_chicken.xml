@@ -38,6 +38,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="100dp"
+
             android:text="공유방 찾기"
             android:onClick="btn_chicken1Clicked"
             />

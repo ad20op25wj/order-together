@@ -20,7 +20,7 @@ public class ChineseActivity extends AppCompatActivity {
     }
 
     public void btn_chinese1Clicked (View v){
-        Toast.makeText(getApplicationContext(), "중국요리 배달 공유방을 찾습니다 ", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "중국요리 배달 공유방 입니다\n대화방 생성,참가,현재 위치 확인이 가능합니다 ", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(ChineseActivity.this, ChineseBoard.class);
         intent.putExtra("menu", "chinese");
         startActivity(intent);

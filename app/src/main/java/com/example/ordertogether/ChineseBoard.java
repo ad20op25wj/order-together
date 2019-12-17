@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +28,12 @@ public class ChineseBoard extends AppCompatActivity implements View.OnClickListe
 
     private MainAdapter mAdapter;
     private List<Board> mBoardList;
+    public void btn_gpsClicked (View v){
+        Toast.makeText(getApplicationContext(), "위치를 찾습니다. ", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(ChineseBoard.this, ChineseShare.class);
 
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,5 +1,7 @@
 package com.example.ordertogether;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -56,7 +58,7 @@ public class KoreanShare extends AppCompatActivity {
 
         final TextView textview_address = (TextView) findViewById(R.id.textview);
 
-        Toast.makeText(getApplicationContext(), "한식 공유방을 찾습니다. 현재 위치를 확인해주세요.", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "현재 위치를 확인하시려면 현재 위치 확인 버튼을 눌려주세요", Toast.LENGTH_LONG).show();
         Button ShowLocationButton = (Button) findViewById(R.id.button);
         ShowLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
